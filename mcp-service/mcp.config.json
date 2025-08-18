@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mcp-cabinets": {
+      "command": "/path/to/mcp-cabinets/mcp-service/.venv/bin/python",
+      "args": ["/path/to/mcp-cabinets/mcp-service/mcp_server.py"]
+    }
+  }
+}

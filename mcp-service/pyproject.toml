@@ -1,0 +1,18 @@
+[project]
+name = "mcp-service"
+version = "0.1.0"
+description = "MCP Service provides a Model Context Protocol server for semantic search and context retrieval, bridging MCP-compatible applications with the API service and supporting async HTTP communication."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.11.3",
+    "httpx>=0.25.0",
+    "tenacity>=8.0.0",
+]
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
+]
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
