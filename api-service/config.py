@@ -1,3 +1,4 @@
+# File: /mcp-cabinets/api-service/config.py
 """
 Configuration settings for the API Service 
 """

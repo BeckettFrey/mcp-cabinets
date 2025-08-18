@@ -1,3 +1,4 @@
+# File: mcp-service/__tests__/test_mcp.py
 import pytest
 from fastmcp import FastMCP, Client
 

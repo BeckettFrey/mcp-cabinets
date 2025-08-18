@@ -1,3 +1,4 @@
+# File: mcp-service/client.py
 """
 HTTP Client for communicating with the indexing service
 """

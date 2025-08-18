@@ -1,3 +1,4 @@
+# File: mcp-service/mcp_server.py
 """
 A modern MCP server implementation using FastMCP 2.0
 """

@@ -1,3 +1,4 @@
+# File: /mcp-cabinets/api-service/models.py
 # Pydantic models
 """
 FastAPI server with LlamaIndex integration for per-cabinet text indexing and retrieval

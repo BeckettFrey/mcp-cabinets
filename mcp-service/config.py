@@ -1,3 +1,4 @@
+# File: mcp-service/config.py
 """
 Configuration for the Model Context Protocol service
 """

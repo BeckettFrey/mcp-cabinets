@@ -3,7 +3,7 @@
 
 MCP cabinets is a modular knowledge bank for storing, organizing, and retrieving context-rich information. It supports two-way access via API and is designed for integration with a corresponding browser extension and other tools.
 
-**Related Project:** [beckettfrey/Contextcabinets.git](https://github.com/beckettfrey/Contextcabinets)
+**Related Project:** [beckettfrey/ContextCaddy.git](https://github.com/beckettfrey/ContextCaddy)
 
 ## Substack
 - [API Service README](api-service/README.md): Details on running and using the API server.
