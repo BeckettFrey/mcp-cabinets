@@ -2,7 +2,7 @@
 
 A FastAPI-based indexing service that provides semantic search capabilities for text content using LlamaIndex and FAISS vector storage.
 
-## 🚀 Overview
+## Overview
 
 The API Service is the core indexing engine that handles:
 - **Text Indexing**: Store and organize content in named cabinets
@@ -10,7 +10,7 @@ The API Service is the core indexing engine that handles:
 - **Vector Storage**: Persistent FAISS-based vector indices
 - **REST API**: Clean HTTP interface for all operations
 
-## 🛠 Technology Stack
+## Tech Stack
 
 - **FastAPI** - Modern Python web framework
 - **LlamaIndex** - Document indexing and retrieval
@@ -18,7 +18,7 @@ The API Service is the core indexing engine that handles:
 - **HuggingFace** - Sentence transformers for embeddings
 - **Pydantic** - Data validation and settings management
 
-## 📁 Bonsai Tree
+## Bonsai Tree
 
 ```
 ├── scripts/                # Utility scripts
@@ -36,7 +36,7 @@ The API Service is the core indexing engine that handles:
 └── uv.lock                 # Dependency lock file
 ```
 
-## 🚦 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -61,7 +61,7 @@ You can adjust the host, port, and other server settings in the configuration fi
 ./scripts/cli.sh
 ```
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Health Check
 ```http
@@ -104,7 +104,7 @@ Content-Type: application/json
 GET /query_cabinet?cabinet_name=my-documents&query=search+terms&top_k=5&similarity_threshold=0.7
 ```
 
-## 🔧 Configuration
+## Configuration
 
 Key configuration options in `config.py`:
 
@@ -131,7 +131,7 @@ RETRIEVAL_CONFIG = {
 }
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Run Tests
 ```bash
@@ -152,7 +152,7 @@ cabinets-chat> query my-cabinet    # Search for content
 cabinets-chat> list            # List all cabinets
 ```
 
-## 🗄 Data Management
+## Data Management
 ### Storage Location
 
 All indexed data is stored in the `storage/` directory, as configured by `STORAGE_CONFIG["persist_path"]` in `config.py`. Each cabinet has its own subdirectory containing the following files:
@@ -179,7 +179,8 @@ storage/
 The `clear.sh` script will leave a `cleanup_log` file in the `storage/` directory to record previous cleanup actions.
 ```
 
-⚠️ **Warning**: This permanently deletes all cabinets and content!
+> [!WARNING]
+> This permanently deletes all cabinets and content (your database)!
 
 ### Backup Data
 ```bash
@@ -190,7 +191,7 @@ tar -czf backup-$(date +%Y%m%d).tar.gz storage/
 tar -xzf backup-20240817.tar.gz
 ```
 
-## 🔍 Similarity Search Details
+## Similarity Search Details
 
 The service uses **L2 distance** with the following behavior:
 
@@ -203,9 +204,8 @@ Example with 0.7 similarity threshold:
 - Results with L2 distance ≤ 1.3 are returned
 - Display scores are exponentially decayed for intuitive reading
 
-## 🔗 Integration
+## Integration
 
 This API service is designed to work with:
-- [**MCP Service**](../mcp-service/) - Provides MCP protocol interface
-- **Chrome Extension** - For browser integration
-- [**ContextCaddy**](https://github.com/beckettfrey/ContextCaddy) - Chrome Extension
+- [**MCP Service**](../mcp-service/) - Provides MCP protocol interface (as mentioned)
+- [**ContextCaddy**](https://github.com/beckettfrey/ContextCaddy) - Chrome Extension (high-level ui)
