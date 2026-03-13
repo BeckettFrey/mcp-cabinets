@@ -2,7 +2,7 @@
 
 A Model Context Protocol (MCP) server that provides semantic search capabilities for Context Cabinets. This service acts as a bridge between MCP-compatible applications (like Cherry Studio) and the api-service.
 
-## 🚀 Overview
+## Overview
 
 The MCP Service provides:
 - **MCP Protocol Interface** - Standard MCP server implementation
@@ -11,13 +11,13 @@ The MCP Service provides:
 - **Error Handling** - Robust error handling and retry logic
 - **FastMCP Framework** - Modern, clean MCP server implementation
 
-## 🛠 Technology Stack
+## Technology Stack
 
 - **FastMCP** - Modern MCP server framework
 - **httpx** - Async HTTP client for API communication
 - **tenacity** - Retry mechanisms with exponential backoff
 
-## 📁 Bonsai Tree
+## Bonsai Tree
 
 ```
 mcp-service/
@@ -32,7 +32,7 @@ mcp-service/
 └── uv.lock                   # Dependency lock file
 ```
 
-## 🚦 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -52,7 +52,7 @@ source .venv/bin/activate
 python mcp_server.py
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### MCP Service Configuration (`config.py`)
 
@@ -94,7 +94,7 @@ ERROR_MESSAGES = {
 }
 ```
 
-## 🔨 MCP Tools
+## MCP Tools
 
 ### 1. retrieve_from_cabinet
 Retrieve relevant content from a specific cabinet using semantic search.
@@ -136,7 +136,7 @@ Check the health status of both the MCP service and indexing service.
 
 **Returns:** Health status and service availability
 
-## 🧪 Testing
+## Testing
 
 ### Test MCP Functionality
 
@@ -145,7 +145,7 @@ Check the health status of both the MCP service and indexing service.
 pytest
 ```
 
-## 🔗 Integration with Cherry Studio
+## Integration with Cherry Studio
 
 ### 1. Update Configuration
 
