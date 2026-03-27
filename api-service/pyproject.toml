@@ -1,4 +1,5 @@
 [project]
+authors = [{name = "Beckett Frey", email = "code@beckettfrey.com"}]
 name = "api-service"
 version = "0.0.1"
 description = "API Service provides a FastAPI-based semantic search and context indexing backend, using LlamaIndex and FAISS for cabinet-based document storage and retrieval."

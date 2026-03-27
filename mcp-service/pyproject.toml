@@ -1,4 +1,5 @@
 [project]
+authors = [{name = "Beckett Frey", email = "code@beckettfrey.com"}]
 name = "mcp-service"
 version = "0.1.0"
 description = "MCP Service provides a Model Context Protocol server for semantic search and context retrieval, bridging MCP-compatible applications with the API service and supporting async HTTP communication."
