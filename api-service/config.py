@@ -37,9 +37,9 @@ SERVER_CONFIG = {
 MCP_CONFIG = {
     "exposed_tools": [
         {
-            "name": "retrieve_from_cacabinetet",
-            "description": "Retrieve context from a specific cacabinetet using a query",
-            "params": ["cacabinetet_name", "query"]
+            "name": "retrieve_from_cabinet",
+            "description": "Retrieve context from a specific cabinet using a query",
+            "params": ["cabinet_name", "query"]
         },
         {
             "name": "list_cabinets",
