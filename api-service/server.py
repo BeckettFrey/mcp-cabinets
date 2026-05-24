@@ -1,6 +1,6 @@
 # File: /mcp-cabinets/api-service/server.py
 """
-FastAPI server with LlamaIndex integration for per-cacabinetet text indexing and retrieval
+FastAPI server with LlamaIndex integration for per-cabinet text indexing and retrieval
 """
 import json
 import math
